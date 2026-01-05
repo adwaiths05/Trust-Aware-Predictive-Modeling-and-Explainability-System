@@ -1,0 +1,55 @@
+# --- Python Basics ---
+# Virtual Environments (Crucial to ignore!)
+venv/
+env/
+.env
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Tools & IDEs ---
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# --- Project Specifics ---
+# Ignore the data folder content? 
+# (Usually yes for large CSVs, unless you want sample data in repo)
+# If you want to keep the folder but ignore files inside, use this:
+data/*
+!data/.gitkeep
+
+# Ignore trained models (large binary files)
+# If your models are huge (>100MB), Git will reject them.
+models/*
+!models/.gitkeep
+
+# Streamlit config (if you have secrets)
+.streamlit/secrets.toml
+
+# --- Mac OS junk ---
+.DS_Store
